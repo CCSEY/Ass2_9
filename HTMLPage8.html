@@ -1,0 +1,14 @@
+@Code
+Dim price=25
+End Code
+<html>
+<body>
+@If price>=30 Then
+    @<p>The price is high.</p>
+ElseIf price>20 And price<30 then 
+    @<p>The price is OK.</p>
+Else
+    @<p>The price is low.</p>
+End If    
+</body>
+</html>

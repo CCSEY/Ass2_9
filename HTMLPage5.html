@@ -1,0 +1,17 @@
+@Code
+Dim members As String()={"Jani","Hege","Kai","Jim"}
+i=Array.IndexOf(members,"Kai")+1
+len=members.Length
+x=members(2-1)
+end Code
+<html>
+<body>
+<h3>Members</h3>
+@For Each person In members
+   @<p>@person</p>
+Next person
+<p>The number of names in Members are @len</p>
+<p>The person at position 2 is @x</p>
+<p>Kai is now in position @i</p>
+</body>
+</html>
